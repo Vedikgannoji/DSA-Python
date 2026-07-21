@@ -5,5 +5,5 @@ slow=0
 
 for fast in range(len(nums)):
     if nums[fast]is usefull:
-        if nums[slow]=nums[fast]:
-            slow+=1
+        nums[slow]=nums[fast]
+        slow+=1

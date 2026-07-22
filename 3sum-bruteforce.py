@@ -1,7 +1,6 @@
 #3 sum
 #brute-force
 nums=[-1,0,1,2,-1,-4]
-nums.sort()
 target=0
 end=len(nums)-1
 def three_sum(nums, target):

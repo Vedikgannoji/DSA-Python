@@ -20,6 +20,4 @@ def container_with_most_water(height):
     return max_area
 
 print(container_with_most_water(height))
-        
-
     

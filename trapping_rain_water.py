@@ -27,7 +27,17 @@ def trapping_rain_water(heights):
     leftMax=heights[left]
     rightMax=heights[right]
     water=0
+    while left<right:
+        
+        if leftMax<=rightMax:
+            leftMax=max(leftMax,heights[left])
+            water+=leftMax-heights[left]
+            left+=1
 
+        else:
+            rightMax=max(rightMax,heights[right])
+            water+=rightMax-heights[right]
+            right-=1
 
     return water
 print(trapping_rain_water(heights))

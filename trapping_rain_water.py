@@ -41,3 +41,4 @@ def trapping_rain_water(heights):
 
     return water
 print(trapping_rain_water(heights))
+#expected output is 6

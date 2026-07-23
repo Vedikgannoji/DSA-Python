@@ -42,3 +42,4 @@ def trapping_rain_water(heights):
     return water
 print(trapping_rain_water(heights))
 #expected output is 6
+#Notes: At every step, process the pointer whose current maximum (leftMax or rightMax) is smaller, because that side's water level is already determined.

@@ -32,7 +32,7 @@ def trapping_rain_water(heights):
         if leftMax<=rightMax:
             leftMax=max(leftMax,heights[left])
             water+=leftMax-heights[left]
-            left+=1
+            left+=1 #The water at the left pointer is fully determined.
 
         else:
             rightMax=max(rightMax,heights[right])

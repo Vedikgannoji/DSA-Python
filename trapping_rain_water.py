@@ -20,3 +20,14 @@ For every index i:
     Add water to total
 '''
 
+heights=[0,1,0,2,1,0,1,3,2,1,2,1]
+def trapping_rain_water(heights):
+    left=0
+    right=len(heights)-1
+    leftMax=heights[left]
+    rightMax=heights[right]
+    water=0
+
+
+    return water
+print(trapping_rain_water(heights))

@@ -8,7 +8,9 @@ def move_zeroes(nums):
             nums[write]=nums[read]
             write+=1
         read+=1
-   
+    while write<len(nums):
+            nums[write]=0
+            write+=1
     return nums
 print(move_zeroes(nums))
 

@@ -14,7 +14,13 @@ def squares(nums):
     return nums
 print(squares(nums))
 '''
-#optimized
+
+# Two Pointer Approach
+# Compare absolute values at both ends.
+# Place the larger square at the end of the answer array.
+# Move the used pointer and continue until all elements are processed.
+# TC: O(n) | SC: O(n)
+
 nums = [-4,-1,0,3,10]
 ans = [0] * len(nums)
 def squares(nums):
@@ -31,5 +37,4 @@ def squares(nums):
         write-=1
     return ans
 print(squares(nums))
-
 

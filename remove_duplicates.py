@@ -3,3 +3,8 @@ nums = [1,1,2]
 def remove_duplicates(nums):
     read=0
     write=0
+    while read<len(nums):
+        if nums[read]==nums[read-1]:
+            continue   
+        else:
+            nums[write]=nums[read]

@@ -4,7 +4,7 @@ def remove_duplicates(nums):
     read=0
     write=0
     while read<len(nums):
-        if nums[read]!=0:
+        if nums[read]!=nums[read-1]:
             nums[write]=nums[read]
             write+=1
         read+=1
@@ -12,3 +12,4 @@ def remove_duplicates(nums):
         nums.remove(nums[write])
 
     return nums
+print(remove_duplicates(nums))

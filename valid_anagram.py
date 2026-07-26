@@ -5,7 +5,7 @@ def anagram(s,t):
     if len(s)!=len(t):
         return False
     else:
-        return s.sort()==t.sort()
+        return sorted(s)==sorted(t)
 print(anagram(s,t))'''
 #without sorting method
 s='aaa'

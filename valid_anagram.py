@@ -11,19 +11,13 @@ print(anagram(s,t))'''
 s='aaa'
 t='a'
 def anagram(s,t):
-    res=True
-    if len(s)!=len(t):
+    if len(s) != len(t):
+        return False
+    set_s = set(s)
+    for i in set_s:
+        if s.count(i) != t.count(i):
             return False
-    else:
-        if len(s)>len(t):
-            for i in range(0,len(s)):
-                if s[i] not in t:
-                    res=False
-        else:
-            for i in range(0,len(t)):
-                if t[i] not in s:
-                    res=False
-    return res
+    return True
 print(anagram(s,t))
 
 

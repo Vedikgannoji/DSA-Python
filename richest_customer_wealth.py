@@ -6,3 +6,13 @@ def richCustomer(accounts):
         total.append(sum(account))
     return max(total)
 print(richCustomer(accounts))
+
+#optimised
+
+def richCustomer2(accounts):
+    max_wealth=0
+    for account in accounts:
+        wealth=sum(account)
+        max_wealth=max(max_wealth,wealth)
+    return max_wealth
+print(richCustomer2(accounts))

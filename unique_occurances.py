@@ -6,7 +6,5 @@ def uniqueOccurances(arr):
         freq[num]=freq.get(num,0)+1
     
     occurances=set(freq.values())
-    if len(occurances)!=len(freq):
-        return False
-    return True
+    return len(occurances) == len(freq)
 print(uniqueOccurances(arr))

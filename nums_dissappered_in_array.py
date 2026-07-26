@@ -8,3 +8,4 @@ def nums_disppeared(nums):
                 res.append(num)
     return res
 print(nums_disppeared(nums))
+

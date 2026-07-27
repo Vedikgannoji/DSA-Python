@@ -10,4 +10,8 @@ def maxProduct(nums):
             second=num
     return ((first-1)*(second-1))
 print(maxProduct(nums))
-
+#optimised
+def maxProduct2(nums):
+    nums.sort()
+    return ((nums[-1]-1)*(nums[-2]-1)) 
+print(maxProduct2(nums))

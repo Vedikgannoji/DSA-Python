@@ -15,3 +15,12 @@ def maxProduct2(nums):
     nums.sort()
     return ((nums[-1]-1)*(nums[-2]-1)) 
 print(maxProduct2(nums))
+#bruteforce
+def maxProduct3(nums):
+    res=0
+    for i in range(0,len(nums)):
+        for j in range(i+1,len(nums)):
+            current=(nums[i]-1)*(nums[j]-1)
+            res=max(res,current)
+    return res
+print(maxProduct3(nums))

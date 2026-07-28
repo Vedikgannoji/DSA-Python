@@ -5,10 +5,7 @@ def kidsCandies(candies,extraCandies):
     res=[]
     greatest=max(candies)
     for candy in candies:
-        if candy+extraCandies>=greatest:
-            res.append("True")
-        else:
-            res.append("False")
+        res.append(candy + extraCandies >= greatest)
     return res
 print(kidsCandies(candies,extraCandies))
 

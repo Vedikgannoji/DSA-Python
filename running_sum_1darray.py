@@ -3,9 +3,10 @@ nums = [1,2,3,4]
 def runningSum(nums):
     size=len(nums)
     res=[0]*size
+    current_sum=0
     for i in range(0,size):
-        for j in range(0,i+1):
-            res[i]+=nums[j]
+        res[i]=current_sum+nums[i]
+        current_sum+=nums[i]
     return res
 print(runningSum(nums))
 

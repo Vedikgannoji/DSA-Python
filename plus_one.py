@@ -7,5 +7,3 @@ def plusOne(digits):
             digits[i] += 1
             return digits
     return [1] + digits
-
-print(plusOne(digits))

@@ -2,7 +2,7 @@
 nums=[1,2,3,2]
 def sumUnique(nums):
     freq={}
-    new=[]
+    total=0
     for num in nums:
         freq[num]=freq.get(num,0)+1
     for num in freq:

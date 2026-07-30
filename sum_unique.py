@@ -7,6 +7,6 @@ def sumUnique(nums):
         freq[num]=freq.get(num,0)+1
     for num,count in freq.items():
         if count==1:
-            
+            toal+=num
     return sum(new)
 print(sumUnique(nums))

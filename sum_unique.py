@@ -8,5 +8,5 @@ def sumUnique(nums):
     for num,count in freq.items():
         if count==1:
             toal+=num
-    return sum(new)
+    return total
 print(sumUnique(nums))

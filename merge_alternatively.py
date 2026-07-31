@@ -10,9 +10,8 @@ def mergeAlternatively(word1,word2):
     minw=word1 if w1<w2 else word2
 
     if w1!=w2:
-        for i in range(len(minw),len(maxw)):
-            new+=maxw[i]
-    for i in range(0,len(minw)):
+        new=maxw[len(minw):]
+    for i in range(len(w)):
         res+=(minw[i]+maxw[i])
     
     return res+new

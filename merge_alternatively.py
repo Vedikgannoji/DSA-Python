@@ -3,17 +3,12 @@ word1 = "ab"
 word2 = "pqrs"
 def mergeAlternatively(word1,word2):
     res=""
-    new=""
-    w1=len(word1)
-    w2=len(word2)
-    maxw=word1 if w1>w2 else word2
-    minw=word1 if w1<w2 else word2
-
-    if w1!=w2:
-        new=maxw[len(minw):]
-    for i in range(len(w)):
-        res+=(minw[i]+maxw[i])
-    
-    return res+new
+    limit=min(len(word1),len(word2))
+    for i in range(limit):
+        res+=word1[i]
+        res+=word2[i]
+    res+=word1[limit:]
+    res+=word2[limit:]
+    return res
     
 print(mergeAlternatively(word1,word2))

@@ -3,9 +3,6 @@ address = "255.100.50.0"
 def defanging(address):
     new=""
     for ch in address:
-        if ch!='.':
-            new=new+ch
-        else:
-            new=new+"[.]"
+        new+="[.]" if ch=="." else ch
     return new
 print(defanging(address))

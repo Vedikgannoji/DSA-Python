@@ -3,7 +3,7 @@ nums = [2,5,1,3,4,7]
 n = 3
 def shuffleArray(nums,n):
     res=[]
-    for i in range(0,3):
+    for i in range(0,n):
             res.append(nums[i])
             res.append(nums[i+n])
     return res

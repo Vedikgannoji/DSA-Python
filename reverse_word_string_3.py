@@ -8,3 +8,9 @@ def reverseWords(s):
     return res.strip()
 
 print(reverseWords(s))
+
+#optimized one liner
+def reverseWords2(s):
+    return " ".join(word[::-1] for word in s.split())
+
+print(reverseWords2(s))

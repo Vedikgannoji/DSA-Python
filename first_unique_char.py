@@ -4,9 +4,9 @@ def nonRepeating(s):
     freq={}
     for ch in s:
         freq[ch]=freq.get(ch,0)+1
-    for ch in s:
-        if freq[ch]==1:
-            return s.index(ch)
+    for i in range(0,len(s)):
+        if freq[s[i]]==1:
+            return i
     return -1
 
 print(nonRepeating(s))

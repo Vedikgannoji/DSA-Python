@@ -5,6 +5,8 @@ def wordPattern(pattern: str, s: str) -> bool:
     pattern_to_word={}
     word_to_pattern={}
     words=s.split()
+    if len(pattern)!=len(words):
+        return False
     for p,w in zip(pattern,words):
         if p in pattern_to_word:
             if pattern_to_word[p]!=w:

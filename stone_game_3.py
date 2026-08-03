@@ -20,3 +20,5 @@ def stoneGame(stoneValue):
         return "Bob"
     else:
         return "Tie"
+
+print(stoneGame(stoneValue))

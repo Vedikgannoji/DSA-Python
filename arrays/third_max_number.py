@@ -1,9 +1,10 @@
 #414
 nums = [3,2,1]
 def thirdMaxNumber(nums):
-    nums.sort()
-    if len(nums)>=3:
-        return nums[2]
+    n = sorted(set(nums))
+
+    if len(n) >= 3:
+        return n[-3]
     else:
-        return nums[len(nums)]
+        return n[-1]
 print(thirdMaxNumber(nums))

@@ -1,7 +1,7 @@
 #119
 rowIndex = 3
 def PascalTriangle2(rowIndex):
-    if rowIndex==1:
+    if rowIndex==0:
         return [1]
     else:
         res=[]

@@ -18,4 +18,3 @@ def merge_similar(items1,items2):
         my_dict[key]=my_dict.get(key,0)+value
     return sorted(my_dict.items())
 print(merge_similar(items1,items2))
-

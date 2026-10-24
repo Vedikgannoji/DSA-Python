@@ -10,13 +10,17 @@ def four_sum2(nums1, nums2, nums3, nums4):
         for n2 in nums2:
             n=n1+n2
             freq1[n]=freq1.get(n,0)+1
-    freq2={}
+    # freq2={}
+    # for n3 in nums3:
+    #     for n4 in nums4:
+    #         n=n3+n4
+    #         freq2[n]=freq2.get(n,0)+1
+    # for k,v in freq1.items():
+    #     if -k in freq2:
+    #         count+=freq1[k]*freq2[-k]
     for n3 in nums3:
         for n4 in nums4:
-            n=n3+n4
-            freq2[n]=freq2.get(n,0)+1
-    for k,v in freq1.items():
-        if -k in freq2:
-            count+=freq1[k]*freq2[-k]
+            target=-(n3+n4)
+            count+=freq1.get(target,0)
     return count
 print(four_sum2(nums1, nums2, nums3, nums4))

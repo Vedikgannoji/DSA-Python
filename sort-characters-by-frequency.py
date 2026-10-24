@@ -1,5 +1,6 @@
 #451 sort-characters-by-frequency
 s = "tree"
+from collections import Counter
 def sort_characters_by_frequency(s):
     freq={}
     res=''
@@ -10,3 +11,9 @@ def sort_characters_by_frequency(s):
         res+=ch*freq[ch]
     return res
 print(sort_characters_by_frequency(s))
+
+def sort_characters_by_frequency2(s):
+    c=Counter(s)
+    s2=sorted(c.keys(),key=lambda x:c[x], reverse=True)
+    return "".join(x*c[x] for x in s2)
+print(sort_characters_by_frequency2(s))
